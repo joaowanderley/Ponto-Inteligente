@@ -110,7 +110,7 @@ public class LancamentoController {
 	 * @return ResponseEntity<Response<LancamentoDto>>
 	 * @throws ParseException 
 	 */
-	@PostMapping
+	@PostMapping("/cadastrar")
 	public ResponseEntity<Response<LancamentoDto>> adicionar(@Valid @RequestBody LancamentoDto lancamentoDto,
 			BindingResult result) throws ParseException {
 		log.info("Adicionando lançamento: {}", lancamentoDto.toString());
